@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import logo from '/logo.png'
 
 export default class NavBar extends Component {
   render() {
@@ -7,8 +8,9 @@ export default class NavBar extends Component {
       <div>
         <nav className="navbar navbar-expand-lg bg-body-tertiary bg-dark ">
           <div className="container-fluid">
-            <Link className="navbar-brand " to="#">
-              AllInOneNews
+            <Link className="navbar-brand " to="/">
+            <img src={logo} alt="CloudPoint" style={{width:'100px'}}/>
+              {/* CloudPoint */}
             </Link>
             <button
               className="navbar-toggler "
